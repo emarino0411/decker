@@ -13,7 +13,8 @@ class PersonnelController extends Controller
      */
     public function index()
     {
-        //
+
+        return view('personnel.index');
     }
 
     /**
@@ -23,7 +24,8 @@ class PersonnelController extends Controller
      */
     public function create()
     {
-        //
+
+        return view('personnel.create');
     }
 
     /**
@@ -56,7 +58,8 @@ class PersonnelController extends Controller
      */
     public function edit($id)
     {
-        //
+
+        return view('personnel.update');
     }
 
     /**

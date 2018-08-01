@@ -13,7 +13,7 @@ class TruckController extends Controller
      */
     public function index()
     {
-        //
+        return view('trucks.index');
     }
 
     /**
@@ -23,7 +23,7 @@ class TruckController extends Controller
      */
     public function create()
     {
-        //
+        return view('trucks.create');
     }
 
     /**
@@ -45,7 +45,7 @@ class TruckController extends Controller
      */
     public function show($id)
     {
-        //
+
     }
 
     /**
@@ -56,7 +56,7 @@ class TruckController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('trucks.update');
     }
 
     /**

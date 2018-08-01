@@ -20,11 +20,12 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('trucks','TruckController');
-Route::resource('motorcycles','MotorcycleController');
 Route::resource('personnel','PersonnelController');
+//Route::resource('motorcycles','MotorcycleController');
+/*
 Route::resource('delivery-destinations','DeliveryDestinationController');
 Route::resource('budgets','BudgetController');
 
 Route::resource('deliveries','DeliveriesController');
 Route::resource('delivery-tracking','DeliveryTrackingController');
-Route::resource('delivery-batch','DeliveryBatchController');
+Route::resource('delivery-batch','DeliveryBatchController');*/

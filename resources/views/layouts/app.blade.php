@@ -325,7 +325,9 @@
                             <span class="hide-menu">Schedules
                                 <span class="label label-rouded label-warning pull-right">6</span></span></a>
                         <ul aria-expanded="false" class="collapse">
+                            <li><a href="ui-alert.html">All</a></li>
                             <li><a href="ui-alert.html">Incoming</a></li>
+                            <li><a href="ui-alert.html">Completed</a></li>
                             <li><a href="ui-alert.html">Delayed</a></li>
                         </ul>
                     </li>
@@ -334,7 +336,9 @@
                             <span class="hide-menu">Deliveries
                                 <span class="label label-rouded label-warning pull-right">6</span></span></a>
                         <ul aria-expanded="false" class="collapse">
+                            <li><a href="ui-alert.html">All</a></li>
                             <li><a href="ui-alert.html">Incoming</a></li>
+                            <li><a href="ui-alert.html">Completed</a></li>
                             <li><a href="ui-alert.html">In-transit</a></li>
                         </ul>
                     </li>
@@ -343,8 +347,10 @@
                             <span class="hide-menu">Budget
                                 <span class="label label-rouded label-warning pull-right">6</span></span></a>
                         <ul aria-expanded="false" class="collapse">
+                            <li><a href="ui-alert.html">All</a></li>
                             <li><a href="ui-alert.html">Incoming</a></li>
-                            <li><a href="ui-alert.html">In-transit</a></li>
+                            <li><a href="ui-alert.html">Approved</a></li>
+                            <li><a href="ui-alert.html">Released</a></li>
                         </ul>
                     </li>
 
@@ -355,6 +361,7 @@
                             <i class="fa fa-truck"></i><span
                                     class="hide-menu">Trucks</span></a>
                         <ul aria-expanded="false" class="collapse">
+                            <li><a href="/trucks/">All</a></li>
                             <li><a href="email-compose.html">Available</a></li>
                             <li><a href="email-read.html">In-transit</a></li>
                             <li><a href="email-inbox.html">Unavailable</a></li>
@@ -364,6 +371,7 @@
                             <i class="fa fa-motorcycle"></i>
                             <span class="hide-menu">Motorcycles</span></a>
                         <ul aria-expanded="false" class="collapse">
+                            <li><a href="chart-flot.html">All</a></li>
                             <li><a href="chart-flot.html">Incoming</a></li>
                             <li><a href="chart-morris.html">Delivered</a></li>
                             <li><a href="chart-chartjs.html">Back-order</a></li>
@@ -373,18 +381,27 @@
                             <i class="fa fa-archive"></i>
                             <span class="hide-menu">Delivery Destinations</span></a>
                         <ul aria-expanded="false" class="collapse">
+                            <li><a href="chart-flot.html">All</a></li>
                             <li><a href="chart-flot.html">Incoming</a></li>
                             <li><a href="chart-morris.html">Delivered</a></li>
                             <li><a href="chart-chartjs.html">Back-order</a></li>
                         </ul>
                     </li>
-                    {{--MAINTENANCE--}}
+                    <li><a class="has-arrow  " href="#" aria-expanded="false">
+                            <i class="fa fa-user"></i>
+                            <span class="hide-menu">Personnel</span></a>
+                        <ul aria-expanded="false" class="collapse">
+                            <li><a href="/personnel">All</a></li>
+                        </ul>
+                    </li>
+                    {{--REPORTS--}}
                     <li class="nav-label">Reports</li>
 
                     <li><a class="has-arrow  " href="#" aria-expanded="false">
                             <i class="fa fa-motorcycle"></i>
                             <span class="hide-menu">Deliveries</span></a>
                         <ul aria-expanded="false" class="collapse">
+                            <li><a href="chart-flot.html">All</a></li>
                             <li><a href="chart-flot.html">Incoming</a></li>
                             <li><a href="chart-morris.html">Delivered</a></li>
                             <li><a href="chart-chartjs.html">Back-order</a></li>
@@ -394,6 +411,7 @@
                             <i class="fa fa-archive"></i>
                             <span class="hide-menu">Motorcycles</span></a>
                         <ul aria-expanded="false" class="collapse">
+                            <li><a href="chart-flot.html">All</a></li>
                             <li><a href="chart-flot.html">Incoming</a></li>
                             <li><a href="chart-morris.html">Delivered</a></li>
                             <li><a href="chart-chartjs.html">Back-order</a></li>
@@ -403,6 +421,7 @@
                             <i class="fa fa-archive"></i>
                             <span class="hide-menu">Budget</span></a>
                         <ul aria-expanded="false" class="collapse">
+                            <li><a href="chart-flot.html">All</a></li>
                             <li><a href="chart-flot.html">Incoming</a></li>
                             <li><a href="chart-morris.html">Delivered</a></li>
                             <li><a href="chart-chartjs.html">Back-order</a></li>
@@ -465,6 +484,7 @@
 
 <script src="/ela-admin/js/custom.min.js"></script>
 
+@yield('js')
 </body>
 
 </html>
